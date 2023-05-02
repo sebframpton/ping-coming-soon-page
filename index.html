@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/42497b7395.js" crossorigin="anonymous"></script>
+   
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	* {box-sizing: border-box;}
+body{
+font-family: 'Manrope', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-size:20px;
+}	
+	
+.container {
+	margin-top:20px;
+  text-align: center;
+}
+.grey-text{
+  font-weight: 200;
+		color:#CCCCCC;
+}
+.flex-container{
+	display:flex;
+ justify-content: center;
+ 
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 0px 10px 0px 0;
+  padding: 15px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width:350px;
+  border-radius:25px;
+}
+
+.form-inline button {
+  padding: 16px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  width:165px;
+  border-radius:25px;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+.fab{
+	color:#2668d9;
+	padding:15px;
+	font-size:12px;
+	 border: 1px solid #ddd;
+	border-radius:50%;
+}
+
+.fab:hover {
+  background-color: royalblue;
+}
+
+.input-box input.input{
+  width: 75%;
+  margin-right: 20px;
+}
+form.valid .input-box input.input{
+  border-color: #4671EA;
+}
+.input-box input.input:focus{
+  border-color: #4671EA;
+}
+form.error input.input{
+  border-color: #de0611;
+}
+.input-box input.button{
+  width: 25%;
+  padding: 0;
+  color: #fff;
+  background: #4671EA;
+  border: none;
+  cursor: pointer;
+}
+
+i:hover{
+color:white;
+}
+
+form .text{
+  color: #de0611;
+  font-size: 12px;
+  font-weight: 500;
+  font-style:italic;
+display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+form.valid .text{
+  color: #1748cf;
+}
+.error-message {
+  color: red;
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+ display:flex;
+ flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.illustration{
+width:600px;
+	height:450px;
+	
+}
+.socials{
+	margin-top:100px;
+}
+.copy{
+color:grey;
+	font-size:12px;
+}
+@media (max-width: 800px) {
+.heading{
+font-size:32px;
+}
+.sub{
+	font-size:15px;
+}
+.flex-container{
+	display:flex;
+ flex-direction: column;
+}
+  .form-inline input {
+     vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width:350px;
+  border-radius:25px;
+  }
+  
+.form-inline button {
+  padding: 16px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  width:350px;
+  border-radius:25px;
+  margin-bottom:150px;
+}
+  
+  .form-inline {
+  display:flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .illustration{
+	width:350px;
+	height:350px;
+}
+}
+
+	.footer {
+   position: ;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color:black;
+   text-align: center;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div><img class="logo" src="images/logo.svg" alt="logo"></div>
+  <div><h1 class="heading"> <span class="grey-text">We are launching</span> soon!</h1></div>
+  <div><p class="sub">Subscribe and get notified</p></div>
+<div>
+<form class="form-inline" action="/action_page.php">
+<div class="flex-container">
+<div class="error-message">
+  <div><input class="input" id="e-mail"  type="input" placeholder="Enter email" name="email"/></div>
+<p class="text"></p></div>
+ <div><button type="submit">Notify Me</button></div>
+
+
+</form>
+
+</div>
+<div><img class="illustration" src="images/illustration-dashboard.png" alt="illustration"></div>
+<div class="socials">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+<div><p class="copy"> &copy; Copyright Ping. All rights reserved.</p>
+</div>
+</div>
+ 
+
+  
+
+
+
+ 
+<div class="footer">
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sebastian Frampton</a>.
+    </p>
+  </footer>
+  </div>
+  <script>
+  function formValidation() {
+ 
+    var email = document.getElementById('e-mail').value;
+  
+    var text = "";
+  
+ 
+  if (Email(email)) {
+  }
+
+  return false;
+}
+
+
+/*email address input validation*/
+function Email(email) {
+  var message = document.getElementsByClassName("error-message");
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+  var atpos = email.indexOf("@");
+  var dotpos = email.lastIndexOf(".");
+          
+  if ( email =="" || email.match(mailformat) || atpos > 1 && ( dotpos - atpos > 2 )) {
+    text="";
+    message[2].innerHTML = text;
+    return true;
+  }
+         
+  else {
+    text="Wrong email format";
+    message[2].innerHTML = text;
+    return false;
+  }
+}
+
+  //getting all attribute
+  const form = document.querySelector("form"),
+  eInput = form.querySelector(".input"),
+  text = form.querySelector(".text");
+
+  form.addEventListener("submit", (e)=>{
+    e.preventDefault(); //preventing form from submitting
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //Regex pattern to validate email
+    form.classList.add("error");
+    form.classList.remove("valid");
+    if(eInput.value == ""){
+      text.innerText = "Email can't be blank";
+    }else if (!eInput.value.match(pattern) ) { //if patter is not matched with user's enter value
+      text.innerText = "Please enter a valid email";
+    }else{
+      form.classList.replace("error" , "valid"); //replacing error class with valid class
+      text.innerText = "This is a valid email";
+    }
+  });
+  </script>
+</body>
+</html>
